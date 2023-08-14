@@ -10,7 +10,7 @@ async function getEvaluation(boardString: string) {
     const url = "https://connect4.shuttleapp.rs/analyze?pos=" + boardString;
     const res = await fetch(url);
     if (!res.ok) {
-        return "Backend not available";
+        return "Backend not reachable";
     }
     return res.text();
 }
