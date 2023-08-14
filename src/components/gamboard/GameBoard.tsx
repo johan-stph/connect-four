@@ -4,7 +4,10 @@ import {checkForWin} from "@/components/gamboard/logic";
 
 
 async function getEvaluation(boardString: string) {
-    const url = "api/connect-four/?position=" + boardString;
+    if (boardString.length === 0) {
+        boardString = "-1";
+    }
+    const url = "https://connect4.shuttleapp.rs/analyze?pos=" + boardString;
     const res = await fetch(url);
     if (!res.ok) {
         return "Backend not available";
