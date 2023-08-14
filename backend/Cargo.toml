@@ -1,0 +1,16 @@
+[package]
+name = "connect4"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rocket = "0.5.0-rc.2"
+shuttle-rocket = "0.23.0"
+shuttle-runtime = "0.23.0"
+tokio = "1.26.0"
+serde = { version = "1.0.181", features = ["derive"] }
+bincode = "1.3.3"
+
+[lib]
+name = "logic"
+path = "logic/src/lib.rs"
