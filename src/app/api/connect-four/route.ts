@@ -1,5 +1,8 @@
 import {NextRequest, NextResponse} from "next/server";
 import {analyze_position} from "@johan-stph/connect-four-solver";
+export const config = {
+    runtime: 'edge',
+};
 
 export async function GET(request: NextRequest) {
     if (request.method !== "GET") {
