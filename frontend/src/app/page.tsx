@@ -1,8 +1,12 @@
-export default async function Home() {
+"use client"
 
+import GameBoard from "@/components/gamboard/GameBoard";
+
+
+export default function Home() {
     return (
         <main>
-            <h1>Home</h1>
+            <GameBoard/>
         </main>
     )
 }

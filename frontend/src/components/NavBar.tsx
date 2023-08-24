@@ -8,18 +8,8 @@ export default function NavBar() {
                 <div className={"flex items-center text-xl font-semibold"}>
                     <Link href={"/"}>Home</Link>
                 </div>
-                <div className={"flex"}>
-                    <ul>
-                        <li className={"inline-block mx-4 text-xl font-semibold"}>
-                            <Link href={"/game"}>Play</Link>
-                        </li>
-                        <li className={"inline-block mx-4 text-xl font-semibold"}>
-                            <Link href={"/analyze"}>Analyse</Link>
-                        </li>
-                        <li className={"inline-block mx-4 text-xl font-semibold"}>
-                            <Link href={"/online"}>Online</Link>
-                        </li>
-                    </ul>
+                <div className={"flex justify-between items-center mx-4 text-xl font-semibold"}>
+                    Connect Four
                 </div>
                 <div className={"flex items-center"}>
                     <a href={"https://github.com/johan-stph/connect-four"}
